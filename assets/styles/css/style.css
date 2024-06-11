@@ -1,0 +1,344 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+header > nav {
+    align-items: center;
+    background-color: #87A2C5;
+    display: flex;
+    padding: 0 5%;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header > nav > h1 {
+    color: white;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+main {
+    background-color: white;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.input_section {
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 25%;
+    padding: 20px;
+}
+
+.input_section > h2 {
+    text-align: center;
+}
+
+.input_section > form > .input {
+    margin: 8px 0;
+}
+
+.input_section > form > button {
+    background-color: #A1B5D0;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    width: 100%;
+}
+
+.input_section > form > .input > input {
+    border: 1px solid #6C757D;
+    border-radius: 5px;
+    display: block;
+    font-size: 15px;
+    padding: 12px;
+    width: 100%;
+}
+
+.input_section > form > .input > label {
+    font-weight: bold;
+}
+
+.input_section > form > .input_inline {
+    align-items: center;
+    display: flex;
+    margin: 10px 0;
+}
+
+.input_section > form > .input_inline > label {
+    font-weight: bold;
+}
+
+.search_section {
+    margin: 20px 20%;
+}
+
+#searchBook {
+    position: relative;
+}
+
+#searchBook > i {
+    fill: black;
+    left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) scale(1.1);
+}
+
+#searchBook > input {
+    background-color: #F8F9FA;
+    border: 1px solid #6C757D;
+    border-radius: 7px;
+    font-size: 18px;
+    padding: 15px 12px 15px 55px;
+}
+
+#searchBook > input:focus {
+    background-color: white;
+}
+  
+#searchBook > input::placeholder {
+    font-size: 16px;
+}
+
+#searchBookTitle {
+    appearance: none;
+    border: 1px solid #6C757D;
+    border-radius: 4px;
+    display: block;
+    font-size: 16px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 100%;
+}
+
+.shelf_section {
+    border: 1px solid #F8F9FA;
+    border-radius: 10px;
+    background-color: #A1B5D0;
+    margin: 20px 20%;
+    padding: 15px;
+}
+
+.shelf_section > h2 {
+    color: white;
+    margin: -5px;
+    text-align: center;
+}
+
+.shelfBook {
+    background-color: #A1B5D0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+}
+
+.bookList {
+    background-color: white;
+    border: 1px solid #F8F9FA;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 16px;
+    width: 100%;
+}
+
+.bookList > h2 {
+    text-align: center;
+}
+
+.bookList > .incompleteBookList > .containerBooks {
+    padding: 8px 5px 16px 16px;
+    margin: 10px 0;
+    border: 1px solid #F8F9FA;
+    border-radius: 10px;
+    background-color: #A1B5D0;
+}
+
+.bookList > .completeBookList > .containerBooks {
+    padding: 8px 5px 16px 16px;
+    margin: 10px 0;
+    border: 1px solid #F8F9FA;
+    border-radius: 10px;
+    background-color: #A1B5D0;
+}
+
+.shelf_section h3 {
+    font-weight: 600;
+    margin: 5px 0;
+}
+
+.shelf_section h4 {
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.shelf_section button {
+    border: 0;
+    padding: 5px;
+    margin: 0 5px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.shelf_section .incomplete {
+    background-color: #198754;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 20px;
+}
+
+.shelf_section .incomplete:hover {
+    background-color: #157347;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 20px;
+}
+
+.shelf_section .remove {
+    background-color: #DB3748;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 20px;
+}
+
+.shelf_section .remove:hover {
+    background-color: #BB2D3B;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 20px;
+}
+
+.shelf_section .complete {
+    background-color: #198754;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 20px;
+}
+
+.shelf_section .complete:hover {
+    background-color: #157347;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 1px 20px;
+}
+
+.swal-modal {
+    background-color: #6D90B9;
+    border: 3px solid #87A2C5;
+  }
+
+.swal-icon--success:after {
+    background: #6D90B9;
+}
+
+.swal-icon--success::before {
+    background: #6D90B9;
+}
+
+.swal-icon--success__hide-corners {
+    background: #6D90B9;
+}
+  
+.swal-title {
+    color: white;
+}
+
+.swal-text {
+    color: white;
+}
+
+.swal-button--confirm {
+    background-color: #198754;
+}
+
+.swal-button--danger {
+    background-color: #DB3748;
+}
+
+.swal-button--cancel {
+    background-color: #C9D1D9;
+}
+
+footer {
+    background-color: #87A2C5;
+    color: white;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width: 998px){
+    .bookList > .incompleteBookList > .containerBooks button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 10px -6px;
+    }
+
+    .bookList > .completeBookList > .containerBooks button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 10px -6px;
+    }
+}
+
+@media (max-width: 600px){
+    .shelfBook {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 9px 10px 0;
+    }
+
+    .bookList > .incompleteBookList > .containerBooks button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 10px -6px;
+    }
+
+    .bookList > .completeBookList > .containerBooks button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+        margin: 10px -6px;
+    }
+}

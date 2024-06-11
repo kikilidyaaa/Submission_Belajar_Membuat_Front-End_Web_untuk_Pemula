@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf Apps</title>
+    <link rel="icon" type="image/x-icon" href="/assets/image/favicon.png">
+
+    <!-- My Own Styles -->
+    <link rel="stylesheet" href="assets/styles/css/style.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!-- ***** Header Start ***** -->
+    <header>
+        <nav>
+            <a href="index.html"><img src="/assets/image/favicon.png" ></a>
+            <h1>Bookshelf Apps</h1>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Form Tambah Buku -->
+        <section class="input_section">
+            <h2 id="titleForm">Masukkan Buku Baru</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="inputBookTitle">Judul</label>
+                    <input id="inputBookTitle" type="text" placeholder="Masukkan judul buku" required/>
+                </div>
+                <div class="input">
+                    <label for="inputBookAuthor">Penulis</label>
+                    <input id="inputBookAuthor" type="text" placeholder="Masukkan nama penulis" required/>
+                </div>
+                <div class="input">
+                    <label for="inputBookYear">Tahun</label>
+                    <input id="inputBookYear" type="number" placeholder="Masukkan tahun terbit buku" required/>
+                </div>
+                <div class="input_inline">
+                    <label for="inputBookIsComplete">Selesai dibaca?</label>
+                    <input id="inputBookIsComplete" type="checkbox">
+                </div>
+                <button id="bookSubmit" type="submit">Simpan</button>
+            </form>
+        </section>
+        
+        <!-- Form Search Buku -->
+        <section class="search_section">
+            <form id="searchBook">
+                <i class="bi bi-search"></i>
+                <input id="searchBookTitle" type="text" placeholder="Cari judul buku"/>
+            </form>
+        </section>
+        
+        <!-- Rak Buku -->
+        <section class="shelf_section">
+            <h2>Rak Buku</h2>
+            <div class="shelfBook">
+                <div class="bookList">
+                    <h2>Belum selesai dibaca</h2>
+                    <div id="incompleteBookList" class="incompleteBookList"></div>
+                </div>
+                <div class="bookList">
+                    <h2>Selesai dibaca</h2>
+                    <div id="completeBookList" class="completeBookList"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Start -->
+    <footer>
+        <p>Crafted with passion &#169; 2024, Kiki Lidya Koswara</p>
+    </footer>
+
+    <!-- Script JS -->
+    <script src="assets/styles/js/script.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
